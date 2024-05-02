@@ -1,0 +1,24 @@
+h1 {
+  font-family: 'Arial', sans-serif;
+  padding-bottom: 20px;
+}
+
+a {
+  display: inline-block;
+  margin: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: rgb(150, 130, 166, 0.1);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 90px;
+  margin-left: 765px;
+  margin-bottom: 260px;
+  transition: all 2s;
+}
+
+.btn:hover {
+  background-color: rgb(172, 151, 190, 0.1);
+}
