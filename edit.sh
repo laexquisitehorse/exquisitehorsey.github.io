@@ -3,6 +3,11 @@ echo "Saving..."
 git add .
 git commit -m "mini-update"
 git pull origin main
+
+echo "
+______________________________________________________
+"
+sleep 0.5
 clear
 
 echo "              -"
