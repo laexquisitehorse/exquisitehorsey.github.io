@@ -28,8 +28,10 @@ sleep 0.5
 clear
 
 echo "              ---"
-sleep 0.7
-clear
+sleep 1
 
 echo "Done!"
-sleep 1
+sleep 2
+clear
+
+exit
