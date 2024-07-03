@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="UTF-8">
@@ -11,6 +10,14 @@
   <body>
     <div class="header">
       <h1>Unblocked Games</h1>
+    </div>
+    <div class="game-container">
+      <iframe class="game-iframe" id="game-area" src="https://proxysit.github.io/public/html5/sm64/" width="900" height="600" scrolling="none" frameborder="0" allowfullscreen=""></iframe>
+      <div class="fulscreen">
+        <a href="#" onclick="open_fullscreen()" class="btn btn-capsule">
+          <i class="bi bi-arrows-fullscreen b-icon"></i>Fullscreen
+        </a>
+      </div>
     </div>
     <script>
       function open_fullscreen() {
@@ -26,7 +33,5 @@
         }
       }
     </script>
-    <iframe class="game-iframe" id="game-area" src="https://proxysit.github.io/public/html5/sm64/" width="900" height="600" scrolling="none" frameborder="0" allowfullscreen=""></iframe> 
-    <div class="fulscreen"><a href="#" onclick="open_fullscreen()" class="btn btn-capsule"><i class="bi bi-arrows-fullscreen b-icon"></i>Fulscreen</a></div>
   </body>
 </html>
