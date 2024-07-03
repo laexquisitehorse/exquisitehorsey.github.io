@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "Saving..."
+sleep 2
 
 git add .
 git commit -m "quick-update"
