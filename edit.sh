@@ -2,10 +2,10 @@
 
 echo "Saving..."
 
-git add . > /dev/null 2>&1
-git commit -m "quick-update" > /dev/null 2>&1
-git push origin main > /dev/null 2>&1
-git pull origin main > /dev/null 2>&1
+git add .
+git commit -m "quick-update"
+git push origin main
+git pull origin main
 
 sleep 1
 clear
