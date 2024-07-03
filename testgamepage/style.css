@@ -25,7 +25,7 @@ img {
   filter: brightness(85%);
 }
 
-img:hover{
+img:hover {
   transform: translate(0, -2.5px);
   transition: transform 1s, filter 1s, all 1s;
   filter: brightness(100%);
@@ -51,20 +51,22 @@ p {
   padding-left: 15px;
 }
 
-.game-iframe {
+.game-container {
   position: relative;
+  width: 900px; /* Match iframe width */
+  margin: 0 auto; /* Center the container */
 }
 
-iframe {
+.game-iframe {
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.1);
-  padding-bottom: 55px;
-  width: 780;
-  margin-left: 20px;
 }
 
 .fulscreen {
   position: absolute;
+  bottom: 10px; /* Position button near the bottom */
+  left: 50%;
+  transform: translateX(-50%); /* Center button horizontally */
   z-index: 99;
 }
 
@@ -82,4 +84,17 @@ footer {
 .center {
   margin-top: 155px;
   text-align: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: rgb(150, 130, 166, 0.1);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 90px;
+  transition: all 2s;
+}
+
+.btn:hover {
+  background-color: rgb(172, 151, 190, 0.1);
 }
