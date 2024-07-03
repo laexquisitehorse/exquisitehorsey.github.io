@@ -5,9 +5,9 @@ git commit -m "mini-update"
 git pull origin main
 
 echo "
-______________________________________________________
+_____________________________________________________
 "
-sleep 0.5
+sleep 1
 clear
 
 echo "              -"
