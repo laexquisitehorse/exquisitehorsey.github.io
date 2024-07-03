@@ -4,9 +4,6 @@ git add .
 git commit -m "mini-update"
 git pull origin main
 
-echo "
-_____________________________________________________
-"
 sleep 1
 clear
 
