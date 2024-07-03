@@ -1,7 +1,8 @@
 echo "Saving..."
 
 git add .
-git commit -m "mini-update"
+git commit -m "quick-update"
+git push origin main
 git pull origin main
 
 sleep 1
