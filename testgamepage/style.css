@@ -60,14 +60,13 @@ p {
 .game-iframe {
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.1);
-  padding-bottom: 40px;
+  padding-bottom: 55px;
 }
 
 .fulscreen {
   position: absolute;
   bottom: 10px; /* Position button near the bottom */
-  left: 50%;
-  transform: translateX(-50%); /* Center button horizontally */
+  right: 265px;
   z-index: 99;
 }
 
