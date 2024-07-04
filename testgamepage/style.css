@@ -65,7 +65,7 @@ p {
 
 .fulscreen {
   position: absolute;
-  bottom: 10px; /* Position button near the bottom */
+  padding-top: 75px;
   right: 265px;
   z-index: 99;
 }
