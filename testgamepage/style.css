@@ -54,13 +54,13 @@ p {
 .game-container {
   position: relative;
   width: 900px;
+  padding-bottom: 55px;
 }
 
 .game-iframe {
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.1);
   margin-left: 20px;
-  padding-bottom: 55px;
 }
 
 .fulscreen {
