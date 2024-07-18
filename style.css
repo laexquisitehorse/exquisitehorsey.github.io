@@ -51,6 +51,14 @@ p {
   padding-left: 15px;
 }
 
+p:a {
+  font-family: Arial;
+  font-size: 22px;
+  color: white;
+  text-shadow: 0px 0px 0.5px rgb(200,200,200);
+  padding-left: 15px;
+}
+
 .game-iframe {
   position: relative;
 }
