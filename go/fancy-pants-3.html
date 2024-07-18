@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="special.css">
+    <link rel="icon" type="image/x-icon" href="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico">
+  </head>
+  <body>
+    <div class="header">
+      <h1>Unblocked Games</h1>
+    </div>
+    <script>
+      function open_fullscreen() {
+        var elem = document.getElementById('game-area');
+        if (elem.requestFullscreen) {
+          elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) { /* Firefox */
+          elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+          elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE/Edge */
+          elem.msRequestFullscreen();
+        }
+      }
+    </script>
+    <iframe class="game-iframe" id="game-area" src="https://tag-2.github.io/a4/fancy-pants-3" width="900" height="600" scrolling="none" frameborder="0" allowfullscreen=""></iframe> 
+    <div class="fulscreen"><a href="#" onclick="open_fullscreen()" class="btn btn-capsule"><i class="bi bi-arrows-fullscreen b-icon"></i>Fulscreen</a></div>
+  </body>
+</html>
