@@ -18,4 +18,4 @@ I would be very greatful if someone took the time to help me with this project. 
 ## Ways to contact me
 Email: shrashep@outlook.com
 
-current version: Beta
+## current version: Beta
