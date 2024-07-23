@@ -1,0 +1,16 @@
+body{
+  background-color: black;
+}
+
+h1{
+  text-align: center;
+  padding-bottom: 45px;
+  font-family: sans-serif;
+  color: white;
+}
+
+h2{
+  text-align: center;
+  font-family: sans-serif;
+  size: 20px;
+}
