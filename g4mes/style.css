@@ -4,6 +4,7 @@ body{
 
 h1{
   text-align: center;
+  padding-right: 30px;
   padding-bottom: 45px;
   font-family: sans-serif;
   color: white;
@@ -11,6 +12,8 @@ h1{
 
 h2{
   text-align: center;
+  padding-right: 35px;
   font-family: sans-serif;
   size: 20px;
+  color: white;
 }
