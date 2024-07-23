@@ -8,6 +8,7 @@ Another unblocked games website. Though this one looks like it was copied straig
 * (soon to be public) Search tab 🔎
 * Fulscreen for games ⇱
 * Favicon and title desgised as canvas dashboard 🤫
+* Includes banger games like **Super Mario 64**, **Super Hot** and **Drift Hunters** 🤘
 
 ## Usage:
 Just go to the current link and play whatever you want. If you want to fork, please give me some credit. I worked hard on this.
