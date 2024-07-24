@@ -1,7 +1,17 @@
+body{
+  background-color: grey;
+}
+
 .container{
   width: 200px;
   height: 100px;
-  border: 1px solid black;
+  border: 2px black;
   padding: 10px;
   margin: 10px;
+  border-radius: 15px;
+}
+
+.containers{
+  margin-top: 20px;
+  margin-top: 25px;
 }
