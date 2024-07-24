@@ -38,9 +38,10 @@ img:active {
 }
 
 hr {
-  color: rgb(80,60,70);
-  border-color: rgb(80,60,70);
-  border-radius: 200px;
+  border: 0; /* Remove default border */
+  height: 1px; /* Specify the height of the line */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); /* Gradient background */
+  margin: 20px 0; /* Margin above and below the hr */
 }
 
 p {
