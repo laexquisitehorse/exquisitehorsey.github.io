@@ -1,14 +1,12 @@
-.container{
+.container {
   width: 200px;
   height: 100px;
-  border: 2px;
-  border-color: black;
+  border: 2px solid black;
   padding: 10px;
   margin: 10px;
   border-radius: 15px;
 }
 
-.containers{
-  margin-top: 20px;
-  margin-top: 25px;
+.container.second {
+  margin-top: 25px; 
 }
