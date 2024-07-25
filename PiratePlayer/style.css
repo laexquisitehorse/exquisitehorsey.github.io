@@ -1,7 +1,10 @@
+body {
+  background-color: grey;
+}
+
 .containers {
   display: flex; /* Ensures containers are displayed in a row */
   justify-content: center; /* Centers containers horizontally */
-  background-color: lightgrey; /* Sets background color for the containers */
   padding: 20px; /* Adds padding around containers */
 }
 
