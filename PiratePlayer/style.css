@@ -1,3 +1,10 @@
+.containers {
+  display: flex; /* Ensures containers are displayed in a row */
+  justify-content: center; /* Centers containers horizontally */
+  background-color: lightgrey; /* Sets background color for the containers */
+  padding: 20px; /* Adds padding around containers */
+}
+
 .container {
   width: 200px;
   height: 100px;
@@ -5,8 +12,5 @@
   padding: 10px;
   margin: 10px;
   border-radius: 15px;
-}
-
-.container.second {
-  margin-top: 25px; 
+  background-color: white; /* Sets background color inside containers */
 }
