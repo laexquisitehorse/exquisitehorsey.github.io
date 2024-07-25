@@ -9,6 +9,7 @@ Another unblocked games website. Though this one looks like it was copied straig
 * Fulscreen for games ⇱
 * Favicon and title desgised as canvas dashboard 🤫
 * Includes banger games like **Super Mario 64**, **Super Hot** and **Drift Hunters** 🤘
+* Ad free games for ever (I know, i'm so nice.) 🚫
 
 ## Usage:
 Just go to the current link and play whatever you want. If you want to fork, please give me some credit. I worked hard on this.
@@ -16,7 +17,7 @@ Just go to the current link and play whatever you want. If you want to fork, ple
 ## Contributing:
 I would be very greatful if someone took the time to help me with this project. I've been working on this for WAY too long by myself.
 
-## Ways to contact me
+## How to contact me:
 Email: shrashep@outlook.com
 
 ## current version: Beta
