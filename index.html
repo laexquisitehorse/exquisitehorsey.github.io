@@ -6,30 +6,14 @@
     <title>Redirecting...</title>
     <script>
         window.onload = () => {
-            // Open a new blank page
-            const newWindow = window.open('about:blank', '_blank');
+            // Open a new tab with index(loaded).html
+            const newWindow = window.open('index(loaded).html', '_blank');
             if (newWindow) {
-                // Write content to the new blank page
-                newWindow.document.open();
-                newWindow.document.write(`
-                    <!DOCTYPE html>
-                    <html lang="en">
-                    <head>
-                        <meta charset="UTF-8">
-                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                        <title>Index Loaded</title>
-                    </head>
-                    <body>
-                        <p>This is the content of index(loaded).html</p>
-                    </body>
-                    </html>
-                `);
-                newWindow.document.close();
-                
-                // Delay the redirection of the original page
+                // Delay the redirection of the original page to allow the new tab to open
                 setTimeout(() => {
+                    // Redirect the original page to Google Drive
                     window.location.href = 'https://drive.google.com';
-                }, 500); // Adjust timeout as needed
+                }, 500); // Adjust the timeout as needed
             }
         };
     </script>
