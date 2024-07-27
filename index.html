@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        function redirectToDrive() {
+            // Create a new blank page (index(loaded).html)
+            const newWindow = window.open('about:blank', 'index(loaded)');
+            if (newWindow) {
+                // Delay the redirect to Google Drive to ensure the new page is opened first
+                setTimeout(() => {
+                    // Refresh the original page to Google Drive
+                    window.location.href = 'https://drive.google.com';
+                }, 500); // Adjust timeout as needed
+            }
+        }
+        window.onload = redirectToDrive;
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
+index(loaded).html
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loaded</title>
+    <script>
+        // This script will simply close the window after being opened
+        window.onload = () => {
+            window.close();
+        };
+    </script>
+</head>
+<body>
+    <p>This page is being loaded briefly...</p>
+</body>
+</html>
