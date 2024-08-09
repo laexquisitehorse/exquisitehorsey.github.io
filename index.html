@@ -10,7 +10,18 @@
     <link rel="stylesheet" href="special.css">
     <link rel="icon" type="image/x-icon" href="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico">
     <link rel="manifest" href="manifest.json">
-    
+    <script>
+        function detectBrowser() {
+            var userAgent = navigator.userAgent;
+            var isChrome = /Chrome/.test(userAgent) && /Google Inc/.test(navigator.vendor);
+
+            if (!isChrome) {
+                alert("This site is not optimized for your current browser. For the best experience, load this site in a Google Chrome tab.");
+            }
+        }
+
+        window.onload = detectBrowser;
+    </script>
   </head>
   <body>
     <div class="header">
