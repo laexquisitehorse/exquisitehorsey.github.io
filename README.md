@@ -1,4 +1,4 @@
-# Unblockedgames website
+# Unblocked Games website
 
 ## Description:
 Another unblocked games website. Though this one looks like it was copied straight from tag-2, I hand coded the styles and files (I only took the games from other websites). I sometimes change the address and name to counter getting blocked by Cisco.
