@@ -25,7 +25,7 @@ img {
   filter: brightness(85%);
 }
 
-img:hover{
+img:hover {
   transform: translate(0, -2.5px);
   transition: transform 1s, filter 1s, all 1s;
   filter: brightness(100%);
@@ -51,21 +51,29 @@ p {
   padding-left: 15px;
 }
 
-.game-iframe {
-  position: relative;
+.game-container {
+  position: relative; /* Allows positioning of children absolutely */
 }
 
-iframe {
+.game-iframe {
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 780px; /* Fixed unit to match your iframe width */
+  margin-left: 20px;
+}
+
+.iframe {
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.1);
   padding-bottom: 55px;
-  width: 780;
-  margin-left: 20px;
+  width: 780px;
 }
 
 .fulscreen {
   position: absolute;
-  z-index: 99;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  z-index: 100; /* Ensure it's above other elements */
 }
 
 footer {
@@ -82,4 +90,18 @@ footer {
 .center {
   margin-top: 155px;
   text-align: center;
+}
+
+/* Additional styling for buttons */
+.btn {
+  padding: 10px 20px;
+  background-color: rgb(150, 130, 166, 0.1);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 90px;
+  transition: all 2s;
+}
+
+.btn:hover {
+  background-color: rgb(172, 151, 190, 0.1);
 }
