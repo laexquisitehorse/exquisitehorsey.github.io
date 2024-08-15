@@ -99,7 +99,8 @@ footer {
     position: fixed;
     bottom: 0;
     right: 0;
-    background-color: rgb(5,83,143,0.3);
+    font-family: sans-serif;
+    background-color: rgb(158,105,201,0.35);
     color: #fff;
     padding: 10px;
     z-index: 1000; /* Ensures it stays above other content */
@@ -111,7 +112,6 @@ footer {
 }
 
 .current-time {
-  margin-left: 90%;
-  font-family: sans-serif;
+  margin-right: 10%;
   color: rgb( 134,75,165,0.6);
 }
