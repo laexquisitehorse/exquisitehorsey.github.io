@@ -96,19 +96,19 @@ footer {
 }
 
 .fixed-bar {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    font-family: sans-serif;
-    background-color: rgb(120,125,250,0.48);
-    color: #fff;
-    padding: 10px;
-    z-index: 1000;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 30px;
-    width: 100%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-family: sans-serif;
+  background-color: rgba(155, 35, 185, 0.702);
+  color: #fff;
+  padding: 10px;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 30px;
+  width: 100%;
 }
 
 .current-time {
