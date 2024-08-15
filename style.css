@@ -99,15 +99,19 @@ footer {
     position: fixed;
     bottom: 0;
     right: 0;
-    background-color: #000;
+    background-color: rgb(5,83,143,0.3);
     color: #fff;
     padding: 10px;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
     z-index: 1000; /* Ensures it stays above other content */
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 40px; /* Adjust height as needed */
+    height: 30px; /* Adjust height as needed */
     width: 100%; /* Full width of the viewport */
+}
+
+.current-time {
+  margin-left: 90%;
+  font-family: sans-serif;
+  color: rgb( 134,75,165,0.6);
 }
