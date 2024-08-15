@@ -3,8 +3,8 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <!--  <meta http-equiv = "refresh" content = "0; url = /index(maintenance).html" /> -->
-    <meta http-equiv = "refresh" content = "200; url = https://drive.google.com/drive/home" />
+    <!-- <meta http-equiv="refresh" content="0; url=/index(maintenance).html" /> -->
+    <meta http-equiv="refresh" content="200; url=https://drive.google.com/drive/home" />
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="special.css">
@@ -22,6 +22,24 @@
         }
 
         window.onload = detectBrowser;
+
+        // Function to update time
+        function updateTime() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            document.getElementById('current-time').textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        // Update time every second
+        setInterval(updateTime, 1000);
+
+        // Initialize time display
+        window.onload = function() {
+            updateTime();
+            detectBrowser();
+        }
     </script>
   </head>
   <body>
