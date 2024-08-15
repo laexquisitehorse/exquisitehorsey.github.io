@@ -25,12 +25,12 @@
             const now = new Date();
             const hours = String(now.getHours()).padStart(2, '0');
             const minutes = String(now.getMinutes()).padStart(2, '0');
-            const seconds = String(now.getSeconds()).padStart(2, '0');
-            document.getElementById('current-time').textContent = `${hours}:${minutes}:${seconds}`;
+            // Exclude seconds
+            document.getElementById('current-time').textContent = `${hours}:${minutes}`;
         }
 
-        // Update time every second
-        setInterval(updateTime, 1000);
+        // Update time every minute
+        setInterval(updateTime, 60000);
 
         // Initialize time display
         window.onload = function() {
@@ -168,7 +168,7 @@
     <a href="https://forms.gle/djqKxqWDcruoCTTs6"><p>Recomendations</p></a>
     <hr>
     <div class="fixed-bar">
-      <div id="current-time">00:00:00</div>
+      <div id="current-time">00:00</div>
     </div>
   </body>
   <footer>
