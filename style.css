@@ -100,19 +100,19 @@ footer {
     bottom: 0;
     right: 0;
     font-family: sans-serif;
-    background-color: rgb(165,5,170,0.48);
+    background-color: rgb(120,125,250,0.48);
     color: #fff;
     padding: 10px;
-    z-index: 1000; /* Ensures it stays above other content */
+    z-index: 1000;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 30px; /* Adjust height as needed */
-    width: 100%; /* Full width of the viewport */
+    height: 30px;
+    width: 100%;
 }
 
 .current-time {
   margin-right: 10%;
-  color: rgb(120,5,160,0.95);
+  color: rgb(45,20,55,0.851);
   size: 30px;
 }
