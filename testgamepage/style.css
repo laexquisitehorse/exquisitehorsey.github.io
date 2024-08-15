@@ -53,27 +53,33 @@ p {
 
 .game-container {
   position: relative; /* Allows positioning of children absolutely */
+  width: 900px;
+  margin: 0 auto;
 }
 
 .game-iframe {
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.1);
-  width: 780px; /* Fixed unit to match your iframe width */
-  margin-left: 20px;
+  width: 100%;
+  height: 600px;
 }
 
-.iframe {
-  border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding-bottom: 55px;
-  width: 780px;
-}
-
-.fulscreen {
+.background-pop {
   position: absolute;
-  top: 10px; /* Adjust as needed */
+  bottom: -20px; /* Adjust this value to control how much the background pops out */
+  left: 0;
+  right: 0;
+  height: 60px; /* Adjust the height as needed */
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  z-index: 1;
+  border-radius: 0 0 12px 12px;
+}
+
+.fullscreen-btn-container {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
   right: 10px; /* Adjust as needed */
-  z-index: 100; /* Ensure it's above other elements */
+  z-index: 2; /* Ensure it's above other elements */
 }
 
 footer {
