@@ -20,4 +20,4 @@ I would be very greatful if someone took the time to help me with this project. 
 ## How to contact me:
 Email: shrashep@outlook.com
 
-## current version: Beta
+## current version: 1.1.0
