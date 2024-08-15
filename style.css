@@ -108,7 +108,6 @@ footer {
   margin-top: 25px;
 }
 
-/* New fixed bar styles */
 .fixed-bar {
   position: fixed;
   bottom: 0;
@@ -120,4 +119,14 @@ footer {
   padding: 10px 0;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
   z-index: 1000; /* Ensure it stays above other content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.fixed-bar .time {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
 }
