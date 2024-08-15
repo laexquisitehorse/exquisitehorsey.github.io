@@ -114,8 +114,9 @@ footer {
 .current-time {
   margin-right: 10%;
   color: rgb(45,20,55,0.851);
-  size: 30px;
+  font-size: 20px;
   shaddow: 0.67px 1px 1.2px rgb(50,50,50,0.92);
   padding: 5px;
+  background-color: rgb(185,125,185);
   border-radius: 3.5px;
 }
