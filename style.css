@@ -25,7 +25,7 @@ img {
   filter: brightness(85%);
 }
 
-img:hover{
+img:hover {
   transform: translate(0, -2.5px);
   transition: transform 1s, filter 1s, all 1s;
   filter: brightness(100%);
@@ -69,7 +69,7 @@ iframe {
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.1);
   padding-bottom: 55px;
-  width: 780;
+  width: 780px;
   margin-left: 20px;
 }
 
@@ -88,6 +88,8 @@ footer {
   text-align: center;
   margin-right: 45px;
   width: 300px;
+  position: relative; /* Ensure footer is positioned normally */
+  bottom: 50px; /* Push footer up from the bottom to avoid overlap with the fixed bar */
 }
 
 .center {
@@ -104,4 +106,18 @@ footer {
   margin-left: 45px;
   margin-top: 20px;
   margin-top: 25px;
+}
+
+/* New fixed bar styles */
+.fixed-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background for visibility */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Ensure it stays above other content */
 }
