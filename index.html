@@ -21,9 +21,6 @@
             }
         }
 
-        window.onload = detectBrowser;
-
-        // Function to update time
         function updateTime() {
             const now = new Date();
             const hours = String(now.getHours()).padStart(2, '0');
@@ -170,7 +167,9 @@
     <hr>
     <a href="https://forms.gle/djqKxqWDcruoCTTs6"><p>Recomendations</p></a>
     <hr>
-    <div class="fixed-bar"></div>
+    <div class="fixed-bar">
+      <div id="current-time">00:00:00</div>
+    </div>
   </body>
   <footer>
     <p>Version: BETA</p>
