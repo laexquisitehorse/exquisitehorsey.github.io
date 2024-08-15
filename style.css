@@ -115,4 +115,5 @@ footer {
   margin-right: 10%;
   color: rgb(45,20,55,0.851);
   size: 30px;
+  shaddow: 0.67px 1px 1.2px rgb(50,50,50,0.92);
 }
