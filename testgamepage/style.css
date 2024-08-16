@@ -54,7 +54,7 @@ p {
 .game-container {
   position: relative;
   width: 900px;
-  margin-right: 35px;
+  margin-left: 35px;
 }
 
 .game-iframe {
@@ -77,9 +77,9 @@ p {
 
 .fullscreen-btn-container {
   position: absolute;
-  bottom: 10px; /* Adjust as needed */
-  right: 10px; /* Adjust as needed */
-  z-index: 2; /* Ensure it's above other elements */
+  margin-bottom: 10px; /* Adjust as needed */
+  margin-right: 10px; /* Adjust as needed */
+  z-index: 10; /* Ensure it's above other elements */
 }
 
 footer {
