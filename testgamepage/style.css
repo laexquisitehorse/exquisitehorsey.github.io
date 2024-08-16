@@ -52,9 +52,9 @@ p {
 }
 
 .game-container {
-  position: relative; /* Allows positioning of children absolutely */
+  position: relative;
   width: 900px;
-  margin: 0 auto;
+  margin-right: 35px;
 }
 
 .game-iframe {
