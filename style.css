@@ -1,78 +1,124 @@
-/* Basic reset */
-body, h1, p {
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: Arial, sans-serif;
   background-image: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIepEkJiK90XL3olE5b1YM2ABEU2Tn4yVUpx9_pmN-ExvyEUvu');
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  color: #fff; /* White text color for better contrast against the background */
+  font-family: sans-serif;
 }
 
-/* Header style */
+h1 {
+  color: rgb(220,220,220);
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
 .header {
-  background-color: rgba(51, 51, 51, 0.8); /* Dark semi-transparent background */
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 10px;
-  width: 80%; /* Adjust as needed */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px; /* Space below the header */
+  padding-left: 45px;
+  padding-right: 300px;
+  background-color: rgb(27, 4, 42);
+  border-radius: 20px;
+  padding-top: 2px;
 }
 
-/* Category style */
-.header .category {
-  display: flex;
-  gap: 20px;
+img {
+  border-radius: 22px;
+  width: 210px;
+  transition: transform 1s, filter 3s, all 2s;
+  filter: brightness(85%);
 }
 
-.header .category h1 {
-  font-size: 20px; /* Smaller font size for categories */
-  background-color: rgba(85, 85, 85, 0.8); /* Slightly lighter semi-transparent background */
-  padding: 10px 15px;
-  border-radius: 5px;
+img:hover{
+  transform: translate(0, -2.5px);
+  transition: transform 1s, filter 1s, all 1s;
+  filter: brightness(100%);
+  box-shadow: 7px 7px 4px rgba(27, 4, 40, 0.5);
 }
 
-/* Image container */
-.imgs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 20px;
+img:active {
+  transition: all 2s;
+  filter: brightness(25%);
 }
 
-.imgs a img {
-  width: 150px;
-  height: 150px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-}
-
-.imgs a img:hover {
-  transform: scale(1.1);
-}
-
-/* Optional: Style for the "All games" text */
-p {
-  text-align: center;
-  font-size: 18px;
-  margin-top: 20px;
-}
-
-/* Optional: Style for the horizontal rule */
 hr {
-  border: 1px solid #ccc;
-  margin: 20px 0;
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(80,60,70,0), rgb(80,60,70), rgba(80,60,70,0));
+  border-radius: 100px;
+  box-shadow: 0 0 10px rgba(80,60,70,0.5);
+}
+
+p {
+  font-family: Arial;
+  font-size: 22px;
+  color: white;
+  text-shadow: 0px 0px 0.5px rgb(200,200,200);
+  padding-left: 15px;
+}
+
+.game-iframe {
+  position: relative;
+}
+
+iframe {
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding-bottom: 55px;
+  width: 780;
+  margin-left: 20px;
+}
+
+.fulscreen {
+  position: absolute;
+  z-index: 99;
+}
+
+footer {
+  background-color: rgba(66,61,61,0.1);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-radius: 200px;
+  text-align: center;
+  margin-right: 45px;
+}
+
+.center {
+  margin-top: 155px;
+  text-align: center;
+}
+
+.purple {
+  color: rgb(141, 84, 171);
+  text-shadow: 0px 0px 4px rgba(141,84,171,0.4);
+}
+
+.imgs {
+  margin-left: 45px;
+  margin-top: 25px;
+}
+
+.fixed-bar {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-family: sans-serif;
+  background-color: rgba(155, 35, 185, 0.702);
+  color: #fff;
+  padding: 10px;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+}
+
+.current-time {
+  margin-right: 5%;
+  color: rgb(45,20,55,0.851);
+  font-size: 20px;
+  shaddow: 0.67px 1px 1.2px rgb(50,50,50,0.92);
+  padding: 5px;
+  background-color: rgb(100,50,100,0.45);
+  border-radius: 3.5px;
+  width: 50px;
 }
