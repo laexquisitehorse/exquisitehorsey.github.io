@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="special.css">
@@ -12,16 +13,16 @@
       <h1>Unblocked Games</h1>
     </div>
     <div class="game-container">
-      <iframe class="game-iframe" id="game-area" src="https://blackscreen.app/" scrolling="none" frameborder="0" allowfullscreen></iframe>
+      <iframe class="game-iframe" id="game-area" src="https://blackscreen.app/" scrolling="no" frameborder="0" allowfullscreen></iframe>
       <div class="background-pop"></div>
       <div class="fullscreen-btn-container">
-        <a href="#" onclick="open_fullscreen()" class="btn btn-capsule">
+        <a href="#" onclick="openFullscreen()" class="btn btn-capsule">
           <i class="bi bi-arrows-fullscreen b-icon"></i>Fullscreen
         </a>
       </div>
     </div>
     <script>
-      function open_fullscreen() {
+      function openFullscreen() {
         var elem = document.getElementById('game-area');
         if (elem.requestFullscreen) {
           elem.requestFullscreen();
