@@ -1,48 +1,50 @@
 body {
   background-image: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIepEkJiK90XL3olE5b1YM2ABEU2Tn4yVUpx9_pmN-ExvyEUvu');
   background-size: cover;
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: sans-serif;
 }
 
 h1 {
   color: rgb(220,220,220);
   font-size: 25px;
+  font-family: sans-serif;
 }
 
 .header {
-  padding: 10px 300px 2px 45px;
+  padding-left: 45px;
+  padding-right: 300px;
   background-color: rgb(27, 4, 42);
   border-radius: 20px;
+  padding-top: 2px;
 }
 
 img {
   border-radius: 22px;
   width: 210px;
-  transition: transform 1s, filter 1s, all 1s;
+  transition: transform 1s, filter 3s, all 2s;
   filter: brightness(85%);
 }
 
 img:hover {
   transform: translate(0, -2.5px);
+  transition: transform 1s, filter 1s, all 1s;
   filter: brightness(100%);
   box-shadow: 7px 7px 4px rgba(27, 4, 40, 0.5);
 }
 
 img:active {
+  transition: all 2s;
   filter: brightness(25%);
 }
 
 hr {
-  border: 0;
-  height: 2px;
-  background-image: linear-gradient(to right, rgba(80,60,70,0), rgb(80,60,70), rgba(80,60,70,0));
-  border-radius: 100px;
-  box-shadow: 0 0 10px rgba(80,60,70,0.5);
+  color: rgb(80,60,70);
+  border-color: rgb(80,60,70);
+  border-radius: 200px;
 }
 
 p {
+  font-family: Arial;
   font-size: 22px;
   color: white;
   text-shadow: 0px 0px 0.5px rgb(200,200,200);
@@ -52,7 +54,7 @@ p {
 .game-container {
   position: relative;
   width: 900px;
-  margin: 35px auto;
+  margin-left: 35px;
 }
 
 .game-iframe {
@@ -64,25 +66,28 @@ p {
 
 .background-pop {
   position: absolute;
-  bottom: -20px;
+  bottom: -20px; /* Adjust this value to control how much the background pops out */
   left: 0;
   right: 0;
-  height: 60px;
-  background-color: rgba(255, 255, 255, 0.1);
+  height: 60px; /* Adjust the height as needed */
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
   z-index: 1;
   border-radius: 0 0 12px 12px;
 }
 
 .fullscreen-btn-container {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
-  z-index: 10;
+  margin-bottom: 10px; /* Adjust as needed */
+  margin-right: 10px; /* Adjust as needed */
+  z-index: 10; /* Ensure it's above other elements */
 }
 
 footer {
   background-color: rgba(66,61,61,0.1);
-  padding: 5px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
   border-radius: 200px;
   text-align: center;
   margin-right: 45px;
@@ -93,17 +98,16 @@ footer {
   text-align: center;
 }
 
-/* Button Styling */
+/* Additional styling for buttons */
 .btn {
   padding: 10px 20px;
-  background-color: rgba(150, 130, 166, 0.1);
+  background-color: rgb(150, 130, 166, 0.1);
   color: #fff;
   text-decoration: none;
   border-radius: 90px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: all 2s;
 }
 
 .btn:hover {
-  background-color: rgba(172, 151, 190, 0.2);
-  transform: scale(1.05);
+  background-color: rgb(172, 151, 190, 0.1);
 }
