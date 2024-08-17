@@ -1,113 +1,76 @@
+/* Basic reset */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-image: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIepEkJiK90XL3olE5b1YM2ABEU2Tn4yVUpx9_pmN-ExvyEUvu');
-  background-size: cover;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Light grey background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-h1 {
-  color: rgb(220,220,220);
-  font-size: 25px;
-  font-family: sans-serif;
-}
-
+/* Header style */
 .header {
-  padding-left: 45px;
-  padding-right: 300px;
-  background-color: rgb(27, 4, 42);
-  border-radius: 20px;
-  padding-top: 2px;
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text */
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  width: 80%; /* Adjust as needed */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px; /* Space below the header */
 }
 
-img {
-  border-radius: 22px;
-  width: 210px;
-  transition: transform 1s, filter 3s, all 2s;
-  filter: brightness(85%);
+/* Combining header with categories */
+.header .category {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px; /* Space between title and categories */
 }
 
-img:hover {
-  transform: translate(0, -2.5px);
-  transition: transform 1s, filter 1s, all 1s;
-  filter: brightness(100%);
-  box-shadow: 7px 7px 4px rgba(27, 4, 40, 0.5);
+.header .category h1 {
+  font-size: 20px; /* Smaller font size for categories */
+  background-color: #555; /* Slightly lighter background */
+  padding: 10px 15px;
+  border-radius: 5px;
 }
 
-img:active {
-  transition: all 2s;
-  filter: brightness(25%);
+/* Image container */
+.imgs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-hr {
-  color: rgb(80,60,70);
-  border-color: rgb(80,60,70);
-  border-radius: 200px;
+.imgs a img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 }
 
+.imgs a img:hover {
+  transform: scale(1.1);
+}
+
+/* Optional: Style for the "All games" text */
 p {
-  font-family: Arial;
-  font-size: 22px;
-  color: white;
-  text-shadow: 0px 0px 0.5px rgb(200,200,200);
-  padding-left: 15px;
-}
-
-.game-container {
-  position: relative;
-  width: 900px;
-  margin-left: 35px;
-}
-
-.game-iframe {
-  border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0.1);
-  width: 100%;
-  height: 600px;
-}
-
-.background-pop {
-  position: absolute;
-  bottom: -20px; /* Adjust this value to control how much the background pops out */
-  left: 0;
-  right: 0;
-  height: 60px; /* Adjust the height as needed */
-  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-  z-index: 1;
-  border-radius: 0 0 12px 12px;
-}
-
-.fullscreen-btn-container {
-  position: absolute;
-  margin-bottom: 10px; /* Adjust as needed */
-  margin-right: 10px; /* Adjust as needed */
-  z-index: 10; /* Ensure it's above other elements */
-}
-
-footer {
-  background-color: rgba(66,61,61,0.1);
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 5px;
-  padding-top: 5px;
-  border-radius: 200px;
   text-align: center;
-  margin-right: 45px;
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
 }
 
-.center {
-  margin-top: 155px;
-  text-align: center;
-}
-
-/* Additional styling for buttons */
-.btn {
-  padding: 10px 20px;
-  background-color: rgb(150, 130, 166, 0.1);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 90px;
-  transition: all 2s;
-}
-
-.btn:hover {
-  background-color: rgb(172, 151, 190, 0.1);
+/* Optional: Style for the horizontal rule */
+hr {
+  border: 1px solid #ccc;
+  margin: 20px 0;
 }
