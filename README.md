@@ -10,6 +10,7 @@ Another unblocked games website. Though this one looks like it was copied straig
 * Favicon and title desgised as canvas dashboard 🤫
 * Includes banger games like **Super Mario 64**, **Super Hot** and **Drift Hunters** 🤘
 * Ad free games for ever (I know, i'm so nice.) 🚫
+* Quick Switch for redirecting to Google Drive manually (by pressing 'q' on the home page) ⚡
 
 ## Usage:
 Just go to the current link and play whatever you want. If you want to fork, please give me some credit. I worked hard on this.
@@ -20,4 +21,4 @@ I would be very greatful if someone took the time to help me with this project. 
 ## How to contact me:
 Email: shrashep@outlook.com
 
-## current version: 1.1.0
+## current version: 1.2.6
