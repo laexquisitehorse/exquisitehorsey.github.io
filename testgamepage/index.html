@@ -21,6 +21,12 @@
       </div>
     </div>
     <script>
+      document.addEventListener('keydown', function(event) {
+         if (event.key === 'f' || event.key === 'F') {
+            open_fullscreen();
+         }
+      });
+      
       function open_fullscreen() {
         var elem = document.getElementById('game-area');
         if (elem.requestFullscreen) {
