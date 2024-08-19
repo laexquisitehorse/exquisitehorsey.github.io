@@ -16,7 +16,6 @@
             var isChrome = /Chrome/.test(userAgent) && /Google Inc/.test(navigator.vendor);
 
             if (!isChrome) {
-                // Consider a more user-friendly message or alternative guidance
                 alert("For the best experience, please use Google Chrome.");
             }
         }
@@ -29,7 +28,6 @@
             const now = new Date();
             const hours = String(now.getHours()).padStart(2, '0');
             const minutes = String(now.getMinutes()).padStart(2, '0');
-           // Exclude seconds
           document.getElementById('current-time').textContent = `${hours}:${minutes}`;
         }
 
@@ -44,8 +42,8 @@
 
         // Initialize time display when the window loads
         window.onload = function() {
-            updateTime(); // Display the current time immediately
-            detectBrowser(); // Call this function if it's defined elsewhere
+            updateTime();
+            detectBrowser();
         };
     </script>
     <script src="script.js"></script>
@@ -223,6 +221,6 @@
     </div>-->
   </body>
   <footer>
-    <p>Version: 1.2.4</p>
+    <p>Version: 1.2.6</p>
   </footer>
 </html>
