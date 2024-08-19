@@ -5,7 +5,7 @@ body {
 }
 
 h1 {
-  color: rgb(220,220,220);
+  color: white;
   font-size: 25px;
   font-family: sans-serif;
 }
@@ -38,11 +38,9 @@ img:active {
 }
 
 hr {
-  border: 0;
-  height: 2px;
-  background-image: linear-gradient(to right, rgba(80,60,70,0), rgb(80,60,70), rgba(80,60,70,0));
-  border-radius: 100px;
-  box-shadow: 0 0 10px rgba(80,60,70,0.5);
+  color: rgb(80,60,70);
+  border-color: rgb(80,60,70);
+  border-radius: 200px;
 }
 
 p {
@@ -84,41 +82,4 @@ footer {
 .center {
   margin-top: 155px;
   text-align: center;
-}
-
-.purple {
-  color: rgb(141, 84, 171);
-  text-shadow: 0px 0px 4px rgba(141,84,171,0.4);
-}
-
-.imgs {
-  margin-left: 45px;
-  margin-top: 25px;
-}
-
-.fixed-bar {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  font-family: sans-serif;
-  background-color: rgba(155, 35, 185, 0.702);
-  color: #fff;
-  padding: 10px;
-  z-index: 1000;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 30px;
-  width: 100%;
-}
-
-.current-time {
-  margin-right: 5%;
-  color: rgb(45,20,55,0.851);
-  font-size: 20px;
-  shaddow: 0.67px 1px 1.2px rgb(50,50,50,0.92);
-  padding: 5px;
-  background-color: rgb(100,50,100,0.45);
-  border-radius: 3.5px;
-  width: 50px;
 }
