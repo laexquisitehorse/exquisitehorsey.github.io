@@ -64,8 +64,10 @@ iframe {
 }
 
 .fulscreen {
-  position: absolute;
+  position: relative;
   z-index: 99;
+  right: 620px;
+  top: 640px;
 }
 
 footer {
