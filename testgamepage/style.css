@@ -67,7 +67,7 @@ iframe {
   position: static;
   z-index: 99;
   left: 550px;
-  top: 570px;
+  top: 500px;
 }
 
 .fulscreen:active {
