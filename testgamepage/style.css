@@ -70,6 +70,10 @@ iframe {
   top: 640px;
 }
 
+.fulscreen:active {
+  shaddow: 1px 1px rgb(250,30,180,0.8);
+}
+
 footer {
   background-color: rgba(66,61,61,0.1);
   padding-left: 20px;
