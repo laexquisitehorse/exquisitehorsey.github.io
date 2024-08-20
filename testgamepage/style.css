@@ -66,8 +66,8 @@ iframe {
 .fulscreen {
   position: absolute;
   z-index: 99;
-  left: 550px;
-  top: 500px;
+  left: 5.5in;
+  top: 5.2in;
 }
 
 .fulscreen:active {
@@ -75,8 +75,7 @@ iframe {
 }
 
 .btn, .btn-capsule {
-  /* Existing styles */
-  display: inline-block;
+  display: flex;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
