@@ -64,14 +64,14 @@ iframe {
 }
 
 .fulscreen {
-  position: relative;
+  position: absolute;
   z-index: 99;
-  right: 620px;
-  top: 640px;
+  left: 550px;
+  top: 570px;
 }
 
 .fulscreen:active {
-  shaddow: 1px 1px rgb(250,30,180,0.8);
+  box-shadow: 1px 1px 5px rgba(250, 30, 180, 0.8);
 }
 
 footer {
