@@ -53,20 +53,25 @@ p {
 
 .game-container {
   position: relative;
-  width: 900px; /* Ensure this matches the iframe width */
+  width: 900px;
   margin-left: 20px;
 }
 
 .game-iframe {
   position: relative;
-  z-index: 1; /* Ensure iframe has a lower z-index */
+  z-index: 1;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding-bottom: 55px;
+  width: 780;
+  margin-left: 20px;
 }
 
 .fullscreen-btn-container {
   position: absolute;
-  top: 10px; /* Adjust this value as needed */
-  right: 10px; /* Adjust this value as needed */
-  z-index: 100; /* Higher z-index to ensure it's on top of the iframe */
+  top: 550px;
+  right: 70px;
+  z-index: 100;
 }
 
 .btn, .btn-capsule {
