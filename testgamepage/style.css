@@ -75,6 +75,7 @@ p {
 }
 
 h4 {
+  z-index: 99px;
   position: absolute;
   font-size: 25px;
   font-family: sans-serif;
