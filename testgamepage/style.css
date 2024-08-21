@@ -74,6 +74,12 @@ p {
   z-index: 100;
 }
 
+h4 {
+  position: absolute;
+  top: 608px;
+  right: 550px;
+}
+
 .btn, .btn-capsule {
   display: flex;
   padding: 10px 20px;
