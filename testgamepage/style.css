@@ -69,8 +69,8 @@ p {
 
 .fullscreen-btn-container {
   position: absolute;
-  top: 550px;
-  right: 70px;
+  top: 560px;
+  right: 75px;
   z-index: 100;
 }
 
