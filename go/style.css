@@ -51,21 +51,55 @@ p {
   padding-left: 15px;
 }
 
-.game-iframe {
+.game-container {
   position: relative;
+  width: 900px;
+  margin-left: 20px;
 }
 
-iframe {
+.game-iframe {
+  position: relative;
+  z-index: 1;
   border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(260, 85, 275, 0.1);
   padding-bottom: 55px;
   width: 780;
   margin-left: 20px;
 }
 
-.fulscreen {
+.fullscreen-btn-container {
   position: absolute;
-  z-index: 99;
+  top: 608px;
+  right: 80px;
+  z-index: 100;
+}
+
+h4 {
+  z-index: 99px;
+  position: absolute;
+  font-size: 25px;
+  font-family: arial;
+  color: white;
+  top: 578px;
+  right: 590px;
+}
+
+.btn, .btn-capsule {
+  display: flex;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn:active {
+  background-color: #3e8e41;
 }
 
 footer {
