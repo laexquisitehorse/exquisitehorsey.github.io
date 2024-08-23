@@ -5,3 +5,8 @@ input {
   background-color: rgb(200,80,210,0.4);
   margin-left: 35px;
 }
+
+li:a {
+  text-decoration: none;
+  font-family: sans-serif;
+}
