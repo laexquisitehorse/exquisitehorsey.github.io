@@ -1,21 +1,26 @@
-input {
-  width: 600px;
-  height: 20px;
-  border-radius: 5px;
-  border-decoration: none;
-  text-decoration: none;
-  background-color: rgb(200,80,210,0.4);
-  margin-left: 35px;
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
 }
 
-li:a {
-  text-decoration: none;
-  font-family: sans-serif;
-  color: black;
-  size: 10px;
+#searchInput {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-li {
-  font-family: sans-serif;
-  color: black;
+#itemList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
 }
