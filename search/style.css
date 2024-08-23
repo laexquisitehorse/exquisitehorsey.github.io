@@ -1,7 +1,9 @@
 input {
-  width: 300px;
+  width: 600px;
   height: 20px;
   border-radius: 5px;
+  border-decoration: none;
+  text-decoration: none;
   background-color: rgb(200,80,210,0.4);
   margin-left: 35px;
 }
@@ -9,4 +11,11 @@ input {
 li:a {
   text-decoration: none;
   font-family: sans-serif;
+  color: black;
+  size: 10px;
+}
+
+li {
+  font-family: sans-serif;
+  color: black;
 }
