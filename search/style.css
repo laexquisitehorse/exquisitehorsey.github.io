@@ -4,25 +4,34 @@ body {
 }
 
 #searchInput {
-  width: 600px;
+  width: 1200px;
   padding: 10px;
   font-size: 16px;
+  margin-top: 40px;
   margin-bottom: 20px;
   margin-left: 45px;
-  border: 1px solid rgb(300,100,220,0.1);
+  border: 1px solid rgba(300,100,220,0.4);
   border-radius: 50px;
-  background-color: rgb(230, 240, 255,0.3);
+  background-color: rgba(230, 240, 255,0.3);
 }
 
 #itemList {
   list-style-type: none;
+  margin-top: 15px;
   padding: 0;
+  text-decoration: none;
 }
 
 .item {
   padding: 10px;
-  border: 1px solid #ccc;
   border-radius: 4px;
+  border: 1px solid rgba(300,100,220,0.4);
   margin-bottom: 10px;
-  background-color: rgb(240, 255, 240,0.3);
+  color: black;
+  background-color: rgba(240, 255, 240,0.3);
+  text-decoration: none;
+}
+
+.item:visited {
+  color: dark-grey;
 }
