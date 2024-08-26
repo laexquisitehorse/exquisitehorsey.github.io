@@ -33,17 +33,17 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 100px;
-  min-width: 100px;
+  max-width: 150px;
+  min-width: 150px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
 .item img {
-  max-width: 85px;
-  min-width: 85px;
-  border-radius: 5px;
+  max-width: 135px;
+  min-width: 135px;
+  border-radius: 6px;
 }
 
 .item:visited,
