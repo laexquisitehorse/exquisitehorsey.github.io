@@ -4,10 +4,10 @@ body {
 }
 
 #searchInput {
-  width: 1200px;
+  width: 1100px;
   padding: 10px;
   font-size: 16px;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 45px;
   border: 1px solid rgba(300,100,220,0.4);
@@ -25,13 +25,16 @@ body {
 .item {
   padding: 10px;
   border-radius: 4px;
-  border: 1px solid rgba(300,100,220,0.4);
   margin-bottom: 10px;
   color: black;
-  background-color: rgba(240, 255, 240,0.3);
+  background-color: rgba(240, 255, 240,0.589);
   text-decoration: none;
 }
 
-.item:visited {
+.item:visited,
+.item:hover,
+.item:link,
+.item:active {
+  text-decoration: none;
   color: dark-grey;
 }
