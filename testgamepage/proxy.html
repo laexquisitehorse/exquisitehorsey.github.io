@@ -35,6 +35,12 @@
             width: 100%;
             border: none;
         }
+        #error-message {
+            color: red;
+            padding: 10px;
+            text-align: center;
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -44,13 +50,29 @@
             <button id="navigate-button">Go</button>
         </div>
         <iframe id="webview"></iframe>
+        <div id="error-message">Unable to load the page. Please check the URL or try a different site.</div>
     </div>
     <script>
+        function loadURL(url) {
+            const iframe = document.getElementById('webview');
+            const errorMessage = document.getElementById('error-message');
+            iframe.src = url;
+            
+            // Hide error message initially
+            errorMessage.style.display = 'none';
+
+            // Set a timeout to handle if the page doesn't load
+            setTimeout(() => {
+                if (iframe.contentWindow.document.documentElement.innerHTML === '') {
+                    errorMessage.style.display = 'block';
+                }
+            }, 3000); // Check after 3 seconds
+        }
+
         document.getElementById('navigate-button').addEventListener('click', function() {
             const url = document.getElementById('address-input').value;
-            const iframe = document.getElementById('webview');
             if (url) {
-                iframe.src = url;
+                loadURL(url);
             }
         });
 
@@ -60,6 +82,9 @@
                 document.getElementById('navigate-button').click();
             }
         });
+
+        // Initial load
+        loadURL(document.getElementById('address-input').value);
     </script>
 </body>
 </html>
