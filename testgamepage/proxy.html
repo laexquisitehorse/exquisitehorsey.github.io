@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Browser</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        #address-bar {
+            display: flex;
+            padding: 10px;
+            background: #ddd;
+        }
+        #address-input {
+            flex: 1;
+            padding: 5px;
+            font-size: 16px;
+        }
+        #navigate-button {
+            padding: 5px 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #webview {
+            flex: 1;
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="address-bar">
+            <input type="text" id="address-input" placeholder="Enter URL" value="https://www.example.com">
+            <button id="navigate-button">Go</button>
+        </div>
+        <iframe id="webview"></iframe>
+    </div>
+    <script>
+        document.getElementById('navigate-button').addEventListener('click', function() {
+            const url = document.getElementById('address-input').value;
+            const iframe = document.getElementById('webview');
+            if (url) {
+                iframe.src = url;
+            }
+        });
+
+        document.getElementById('address-input').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                document.getElementById('navigate-button').click();
+            }
+        });
+    </script>
+</body>
+</html>
