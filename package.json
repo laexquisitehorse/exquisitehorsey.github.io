@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "gem": "^2.4.3"
+    "ruby": "^0.6.1"
   }
 }
