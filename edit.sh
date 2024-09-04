@@ -4,7 +4,7 @@ echo "Saving..."
 sleep 2
 
 git add .
-git commit -m "quick-update"
+git commit -m "Quick-Update (from Replit)"
 git push origin main
 git pull origin main
 
