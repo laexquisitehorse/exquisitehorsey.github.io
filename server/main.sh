@@ -1,10 +1,38 @@
 #!/bin/bash
 # -->> DON'T SPEND ALL OF YOUR TIME ON THIS! <<--
 
+clear
+echo "(____): Runing server diagnostics..."
+sleep 0.2
+
+# Re-link/link all files
+chmod +x server/dashboard.sh
+
+clear
+echo "(@___): Runing server diagnostics..."
+sleep 0.5
+
+# Assign values
 port_listening() {
-  nc -l -p 8080 &
-  nc_pid=2431
+  nc -l -p 9090 &
+  nc_pid=$!
 }
+
+clear
+echo "(@@__): Runing server diagnostics..."
+sleep 0.6
+
+# Add diagnostics later
+
+clear
+echo "(@@@_): Runing server diagnostics..."
+sleep 0.3
+
+# Add diagnostics later
+
+clear
+echo "(@@@@): Runing server diagnostics..."
+sleep 1.4
 
 clear
 echo "(____): Starting server..."
@@ -22,17 +50,20 @@ clear
 echo "(@@@_): Starting server..."
 sleep 0.8
 
-clear
-echo "(@@@@): Starting server..."
-sleep 0.4
-
 port_listening
 
 clear
-echo "(*): Server protocol finished"
+echo "(@@@@): Starting server..."
+sleep 4
+
+clear
+echo "(*): Server-setup protocol finished"
 sleep 1
 
-wait $nc_
+echo "(*): Procceding to developer dashboard..."
+sleep 1
 
-echo "(!): Process ended"
+./server/dashboard.sh
+
+echo "(!): The current process has been terminated"
 exit

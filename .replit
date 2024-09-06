@@ -10,5 +10,5 @@ publicDir = "/"
 deploymentTarget = "static"
 
 [[ports]]
-localPort = 8080
+localPort = 9090
 externalPort = 80
