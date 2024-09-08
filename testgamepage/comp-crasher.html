@@ -4,19 +4,71 @@
   <head>
   </head>
   <body>
+    <canvas id="canvas"></canvas>
     <script>
+      const canvas = document.getElementById('canvas');
+      const ctx = canvas.getContext('2d');
+
+      // Resize the canvas to fill the window
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      // Ball properties
+      const ballRadius = 20;
+      let x = canvas.width / 2;
+      let y = canvas.height - ballRadius;
+      let dx = 2; // Change in x (speed in x-direction)
+      let dy = -2; // Change in y (speed in y-direction)
+
+      // Draw the ball
+      function drawBall() {
+        ctx.beginPath();
+        ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
+        ctx.fillStyle = 'blue';
+        ctx.fill();
+        ctx.closePath();
+      }
+
+      // Update ball position and handle bouncing
+      function update() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
+        drawBall();
+
+        // Bounce off the edges
+        if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
+          dx = -dx;
+        }
+        if (y + dy > canvas.height - ballRadius || y + dy < ballRadius) {
+          dy = -dy;
+        }
+
+        x += dx;
+        y += dy;
+
+        requestAnimationFrame(update); // Repeat the update function
+      }
+
+      // Handle window resize
+      window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      });
+
+      // Start the animation
+      update();
+      /*document.write('The long, abstract painting sat at the window seal. "Since when has that painting been there?", Annie asked. "Since forever, dont you remember?" said mother. "I guess im just seeing things" said Annie.')
       document.write('The long, abstract painting sat at the window seal. "Since when has that painting been there?", Annie asked. "Since forever, dont you remember?" said mother. "I guess im just seeing things" said Annie.')
       document.write('The long, abstract painting sat at the window seal. "Since when has that painting been there?", Annie asked. "Since forever, dont you remember?" said mother. "I guess im just seeing things" said Annie.')
-      document.write('The long, abstract painting sat at the window seal. "Since when has that painting been there?", Annie asked. "Since forever, dont you remember?" said mother. "I guess im just seeing things" said Annie.')
+      window.open('https://www.example.com', '_blank', 'width=800,height=600,top=100,left=100,resizable=yes,scrollbars=yes');
+      window.open('https://www.example.com', '_blank', 'width=800,height=600,top=100,left=100,resizable=yes,scrollbars=yes');
+      window.open('https://www.example.com', '_blank', 'width=800,height=600,top=100,left=100,resizable=yes,scrollbars=yes');
       window.open('comp-crasher.html', '_blank');
       window.open('comp-crasher.html', '_blank');
       window.open('comp-crasher.html', '_blank');
       window.open('comp-crasher.html', '_blank');
       window.open('comp-crasher.html', '_blank');
       window.open('comp-crasher.html', '_blank');
-      window.open('comp-crasher.html', '_blank');
-      window.open('comp-crasher.html', '_blank');
-      window.open('comp-crasher.html', '_blank');
+      window.open('comp-crasher.html', '_blank');*/
     </script>
   </body>
 </html>
