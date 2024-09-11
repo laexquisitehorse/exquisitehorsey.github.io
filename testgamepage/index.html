@@ -57,6 +57,13 @@
         iframe.style.border = "none";
         iframe.src = url
         win.document.body.appendChild(iframe)
+        win.document.documentElement.style.margin = "0";
+        win.document.documentElement.style.padding = "0";
+        win.document.documentElement.style.height = "100%";
+        win.document.body.style.margin = "0";
+        win.document.body.style.padding = "0";
+        win.document.body.style.height = "100%";
+        win.document.body.style.overflow = "hidden";
       }
     </script>
   </body>
