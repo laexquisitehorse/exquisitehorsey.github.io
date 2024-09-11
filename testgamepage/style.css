@@ -130,3 +130,13 @@ footer {
 .space-it-up {
   margin-top: 5px;
 }
+
+.cloaker {
+  margin-left: 1000px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width: 250px;
+  height: 65px;
+  background-color: rgba(200,40,240,0.5);
+  font-family: arial;
+}
