@@ -26,7 +26,9 @@
       <p class="space-it-up">cni aicb asbk kajsnkaeu kjnau jadbkwdak jabk uakbud awudk kajwdbkw kabwda jabwdkud auwbdka dakw bawkdj wdkjbwd jhhjdk aw.</p>
     </div>
     <div class="cloaker">
-      <button>Cloak This Game in a New Tab</button>
+      <button onclick="launch_cloaker()" target="_blank">
+        <i class="bi bi-arrows-fullscreen b-icon"></i> Cloak This Game in a New Tab
+      </button>
     </div>
     <script>
       document.addEventListener('keydown', function(event) {
@@ -47,6 +49,17 @@
           elem.msRequestFullscreen();
         }
       }
+
+      function openGame() {
+        var win = window.open()
+        var url = "/testgamepage/index.html"
+        var iframe = win.document.createElement('iframe')
+        iframe.style.width = "100%";
+        iframe.style.height = "100%";
+        iframe.style.border = "none";
+        iframe.src = url
+        win.document.body.appendChild(iframe)
+}
     </script>
   </body>
 </html>
