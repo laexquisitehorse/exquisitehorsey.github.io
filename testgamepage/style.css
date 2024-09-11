@@ -137,5 +137,5 @@ footer {
   background-color: rgba(200,40,240,0.5);
   width: 50px;
   margin-bottom: 550px;
-  height: 20px;
+  max-height: 20px;
 }
