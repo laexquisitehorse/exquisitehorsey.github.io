@@ -117,3 +117,9 @@ footer {
   margin-top: 155px;
   text-align: center;
 }
+
+.description {
+  width: 100px;
+  height: 300px;
+  background-color: rgba(200,80,250,0.8);
+}
