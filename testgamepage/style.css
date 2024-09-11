@@ -119,6 +119,7 @@ footer {
 }
 
 .description {
+  position: absolute;
   width: 250px;
   height: 600px;
   background-color: rgba(200,80,250,0.7);
