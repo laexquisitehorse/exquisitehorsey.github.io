@@ -6,7 +6,7 @@ Another unblocked games website. Though this one looks like it was copied straig
 ## Website features:
 * Redirects to Google drive after 200 seconds 🕙
 * (soon to be public) Search tab 🔎
-* Fulscreen for games ⇱
+* Fulscreen for games by pusheing the fullscreen button or by pressing 'f' ⇱
 * Favicon and title desgised as canvas dashboard 🤫
 * Includes banger games like **Super Mario 64**, **Super Hot** and **Drift Hunters** 🤘
 * Ad free games for ever (I know, i'm so nice.) 🚫
