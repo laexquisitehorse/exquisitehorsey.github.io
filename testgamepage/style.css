@@ -94,7 +94,7 @@ h4 {
   outline: none;
   border: none;
   border-radius: 12px;
-  background-color: #4CAF50;
+  background-color: rgba(180,55,260,0.8);
   color: white;
 }
 
