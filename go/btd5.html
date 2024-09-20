@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Unblocked Games</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="special.css">
     <link rel="icon" type="image/x-icon" href="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico">
@@ -14,19 +14,41 @@
         <h1>Unblocked Games</h1>
     </div>
     <div class="game-container">
-        <!-- Embed your SWF file here -->
-        <div id="swf-container" style="display: none;">
-            <object id="swf-object" type="application/x-shockwave-flash" data="your-swf-file.swf" width="900" height="600">
-                <p>Flash content could not be loaded. Your browser may not support Flash, but Ruffle should handle this content.</p>
-            </object>
+        <!-- SWF Container for Ruffle -->
+        <div id="swf-container"></div>
+        <h4>Bloons TD 5</h4>
+        <div class="fullscreen-btn-container">
+            <button href="#" onclick="open_fullscreen()" class="btn btn-capsule">
+                <i class="bi bi-arrows-fullscreen b-icon"></i> Fullscreen
+            </button>
         </div>
     </div>
 
     <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'f' || event.key === 'F') {
+                open_fullscreen();
+            }
+        });
+        
+        function open_fullscreen() {
+            var elem = document.getElementById('swf-container');
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) { /* Firefox */
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE/Edge */
+                elem.msRequestFullscreen();
+            }
+        }
+
+        // Ruffle player setup
         const ruffle = window.RufflePlayer.newest();
         const player = ruffle.createPlayer();
         const swfContainer = document.getElementById('swf-container');
-        swfContainer.replaceWith(player);
+        swfContainer.appendChild(player);
         player.load("https://grape-lol.github.io/rizz/bloons-td-5-178395d58.swf");
     </script>
 </body>
