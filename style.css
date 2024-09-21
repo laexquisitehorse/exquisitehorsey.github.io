@@ -159,6 +159,5 @@ footer {
 .search-btn {
   position: absolute;
   display: flex;
-  top: 20px;
   right: 1200px;
 }
