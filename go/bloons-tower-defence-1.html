@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="special.css">
+    <link rel="icon" type="image/x-icon" href="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Bungee&family=Comfortaa:wght@400;600&family=Fredoka+One&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+      <h1>Unblocked Games</h1>
+    </div>
+    <div class="game-container">
+      <iframe class="game-iframe" id="game-area" src="https://edumaths.github.io/s4/bloons-tower-defense-1" width="900" height="600" scrolling="none" frameborder="0" allowfullscreen></iframe>
+      <h4>Bloons Tower Defence</h4>
+      <div class="fullscreen-btn-container">
+        <button href="#" onclick="open_fullscreen()" class="btn btn-capsule">
+          <i class="bi bi-arrows-fullscreen b-icon"></i> Fullscreen
+        </button>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('keydown', function(event) {
+         if (event.key === 'f' || event.key === 'F') {
+            open_fullscreen();
+         }
+      });
+      
+      function open_fullscreen() {
+        var elem = document.getElementById('game-area');
+        if (elem.requestFullscreen) {
+          elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) { /* Firefox */
+          elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+          elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE/Edge */
+          elem.msRequestFullscreen();
+        }
+      }
+    </script>
+  </body>
+</html>
