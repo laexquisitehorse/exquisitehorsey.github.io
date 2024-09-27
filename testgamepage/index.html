@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Dashboard</title>
+    <title>Horse | Definition, Breeds, Pictures, Evolution, & Facts | Britannica</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="special.css">
-    <link rel="icon" type="image/x-icon" href="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico">
+    <link rel="icon" type="image/x-icon" href="https://www.britannica.com/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Bungee&family=Comfortaa:wght@400;600&family=Fredoka+One&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -13,23 +13,14 @@
       <h1>Unblocked Games</h1>
     </div>
     <div class="game-container">
-      <div class="game-and-description">
-        <iframe class="game-iframe" id="game-area" src="https://blackscreen.app/" width="900" height="600" scrolling="none" frameborder="0" allowfullscreen></iframe>
-        <div class="description">
-          <h4>Example Game</h4>
-          <p>About:</p>
-          <p class="space-it-up">cni aicb asbk kajsnkaeu kjnau jadbkwdak jabk uakbud awudk kajwdbkw kabwda jabwdkud auwbdka dakw bawkdj wdkjbwd jhhjdk aw.</p>
-        </div>
-      </div>
+      <iframe class="game-iframe" id="game-area" src="http://example.com" width="900" height="600" scrolling="none" frameborder="0" allowfullscreen></iframe>
+      <h4>(game name here)</h4>
       <div class="fullscreen-btn-container">
         <button href="#" onclick="open_fullscreen()" class="btn btn-capsule">
           <i class="bi bi-arrows-fullscreen b-icon"></i> Fullscreen
         </button>
       </div>
     </div>
-    <button onclick="launch_cloaker()" class="btn btn-capsule">
-      <i class="cloaker"></i> Cloak This Game in a New Tab
-    </button>
     <script>
       document.addEventListener('keydown', function(event) {
          if (event.key === 'f' || event.key === 'F') {
@@ -41,31 +32,13 @@
         var elem = document.getElementById('game-area');
         if (elem.requestFullscreen) {
           elem.requestFullscreen();
-        } else if (elem.mozRequestFullScreen) {
+        } else if (elem.mozRequestFullScreen) { /* Firefox */
           elem.mozRequestFullScreen();
-        } else if (elem.webkitRequestFullscreen) {
+        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
           elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) {
+        } else if (elem.msRequestFullscreen) { /* IE/Edge */
           elem.msRequestFullscreen();
         }
-      }
-
-      function launch_cloaker() {
-        var win = window.open()
-        var url = "/testgamepage/index.html"
-        var iframe = win.document.createElement('iframe')
-        iframe.style.width = "100%";
-        iframe.style.height = "100%";
-        iframe.style.border = "none";
-        iframe.src = url
-        win.document.body.appendChild(iframe)
-        win.document.documentElement.style.margin = "0";
-        win.document.documentElement.style.padding = "0";
-        win.document.documentElement.style.height = "100%";
-        win.document.body.style.margin = "0";
-        win.document.body.style.padding = "0";
-        win.document.body.style.height = "100%";
-        win.document.body.style.overflow = "hidden";
       }
     </script>
   </body>
