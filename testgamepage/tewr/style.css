@@ -10,6 +10,10 @@ h1 {
   margin-top: 200px;
 }
 
+.buttons:hover {
+  transform: tranalte(-15px);
+}
+
 .play-btn {
   margin-left: 850px;
   background-color: rgb(50,95,215);
