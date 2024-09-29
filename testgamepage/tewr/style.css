@@ -43,8 +43,6 @@ h1 {
 }
 
 .settings-btn {
-  transform: translate(-15px);
-  transform: transform 3s;
   margin-left: 850px;
   background-color: rgb(55,105,215);
   padding-top: 5px;
