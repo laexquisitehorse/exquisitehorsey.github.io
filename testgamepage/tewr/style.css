@@ -12,6 +12,7 @@ h1 {
 
 .buttons:hover {
   transform: tranalte(-15px);
+  cursor: pointer;
 }
 
 .play-btn {
