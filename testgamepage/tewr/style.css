@@ -24,7 +24,7 @@ h1 {
 }
 
 .play-btn:hover {
-  transform: translate(-15px 3s);
+  transform: translate(-15px, 0);
   transform: transform 3s;
 }
 
@@ -38,7 +38,7 @@ h1 {
 }
 
 .about-btn:hover {
-  transform: translate(-15px 3s);
+  transform: translate(-15px, 0);
   transform: transform 3s;
 }
 
@@ -52,6 +52,6 @@ h1 {
 }
 
 .settings-btn:hover {
-  transform: translate(-15px 3s);
+  transform: translate(-15px, 0);
   transform: transform 3s;
 }
