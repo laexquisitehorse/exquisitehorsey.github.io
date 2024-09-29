@@ -15,8 +15,6 @@ h1 {
 }
 
 .play-btn {
-  transform: translate(-15px);
-  transform: transform 3s;
   margin-left: 850px;
   background-color: rgb(50,95,215);
   padding-top: 5px;
@@ -25,15 +23,23 @@ h1 {
   padding-left: 65px;
 }
 
-.about-btn {
-  transform: translate(-15px);
+.play-btn:hover {
+  transform: translate(-15px 3s);
   transform: transform 3s;
+}
+
+.about-btn {
   margin-left: 850px;
   background-color: rgb(52,100,215);
   padding-top: 5px;
   padding-bottom: 5px;
   padding-right: 65px;
   padding-left: 65px;
+}
+
+.about-btn:hover {
+  transform: translate(-15px 3s);
+  transform: transform 3s;
 }
 
 .settings-btn {
@@ -45,4 +51,9 @@ h1 {
   padding-bottom: 5px;
   padding-right: 65px;
   padding-left: 65px;
+}
+
+.settings-btn:hover {
+  transform: translate(-15px 3s);
+  transform: transform 3s;
 }
