@@ -16,6 +16,8 @@ h1 {
 }
 
 .play-btn {
+  transform: translate(-15px 3s);
+  transform: transform 3s;
   margin-left: 850px;
   background-color: rgb(50,95,215);
   padding-top: 5px;
@@ -25,6 +27,8 @@ h1 {
 }
 
 .about-btn {
+  transform: translate(-15px 3s);
+  transform: transform 3s;
   margin-left: 850px;
   background-color: rgb(52,100,215);
   padding-top: 5px;
@@ -34,6 +38,8 @@ h1 {
 }
 
 .settings-btn {
+  transform: translate(-15px 3s);
+  transform: transform 3s;
   margin-left: 850px;
   background-color: rgb(55,105,215);
   padding-top: 5px;
