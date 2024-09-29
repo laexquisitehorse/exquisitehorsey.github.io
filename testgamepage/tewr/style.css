@@ -3,17 +3,17 @@ html{
 }
 
 h1 {
-  margin-right: 35px;
+  margin-left: 35px;
 }
 
 .play-btn{
-  margin-right: 250px;
+  margin-left: 250px;
 }
 
 .about-btn{
-  margin-right: 250px;
+  margin-left: 250px;
 }
 
 .settings-btn{
-  margin-right: 250px;
+  margin-left: 250px;
 }
