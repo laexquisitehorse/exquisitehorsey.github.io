@@ -6,6 +6,10 @@ h1 {
   margin-left: 35px;
 }
 
+.buttons {
+  margin-top: 50px;
+}
+
 .play-btn {
   margin-left: 850px;
   background-color: rgb(50,95,215);
