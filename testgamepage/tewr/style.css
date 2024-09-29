@@ -1,3 +1,19 @@
 html{
   font-family: arial;
 }
+
+h1 {
+  margin-right: 35px;
+}
+
+.play-btn{
+  margin-right: 250px;
+}
+
+.about-btn{
+  margin-right: 250px;
+}
+
+.settings-btn{
+  margin-right: 250px;
+}
