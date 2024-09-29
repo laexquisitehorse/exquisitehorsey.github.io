@@ -7,13 +7,28 @@ h1 {
 }
 
 .play-btn {
-  margin-left: 650px;
+  margin-left: 850px;
+  background-color: rgb(51,95,215);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 65px;
+  padding-left: 65px;
 }
 
 .about-btn {
-  margin-left: 2650px;
+  margin-left: 850px;
+  background-color: rgb(52,100,215);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 65px;
+  padding-left: 65px;
 }
 
 .settings-btn {
-  margin-left: 650px;
+  margin-left: 850px;
+  background-color: rgb(53,105,215);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 65px;
+  padding-left: 65px;
 }
