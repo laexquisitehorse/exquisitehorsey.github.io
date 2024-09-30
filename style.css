@@ -21,6 +21,7 @@ h1 {
 img {
   border-radius: 22px;
   width: 210px;
+  min-height: 210px;
   transition: transform 1s, filter 3s, all 2s;
   filter: brightness(85%);
 }
