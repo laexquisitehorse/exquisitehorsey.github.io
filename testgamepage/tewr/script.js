@@ -1,5 +1,5 @@
 /* Let variables + other variables */
-
+var hidePopUp1 = false;
 let playerHealth = 60;
 
 
@@ -161,23 +161,21 @@ function TKO() {
 }
 
 function signInPopUp() {
-    var popUp1 = document.getElementById("signInPopUp")
-    if (popUp1.style.display === "none") {
-        popUp1.style.display = "block";
-    } else if ('hidePopUp1' === 1) {
+    var popUp1 = document.getElementById("signInPopUp");
+    if (hidePopUp1) {
         popUp1.style.display = "none";
     } else {
-        popUp1.style.display = "none";
+        popUp1.style.display = popUp1.style.display === "none" ? "block" : "none";
     }
 }
 
 function dontShowPopUp1() {
-    signInPopUp()
-    var hidePopUp1 = 1;
+    hidePopUp1 = true;
+    signInPopUp();
 }
 
 /* Actual game code */
+signInPopUp();
 
-signInPopUp()
 
 
