@@ -171,7 +171,12 @@ function signInPopUp() {
     }
 }
 
+function dontShowPopUp1() {
+    var hidePopUp1 = 1;
+}
+
 /* Actual game code */
 
+signInPopUp()
 
 
