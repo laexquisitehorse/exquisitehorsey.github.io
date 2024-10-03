@@ -1,3 +1,14 @@
+/* Let variables + other variables */
+
+let playerHealth = 60;
+
+
+function gameOverload() {
+    console.log('server: GAME IS CRITICAL');
+    window.stop();
+    console.log('server: Restart the project to run again');
+}
+
 function fadeAffect() {
     const element = document.getElementById('fadeElement');
 
@@ -90,52 +101,66 @@ function loadTrade() {
 }
 
 function displayTradeItems() {
-    if ('tradeItemVar1' === 1) {
-        var tradeItemName1 = '';
-        return arguments[tradeItemName1];
-    } else if ('tradeItemVar1' === 2) {
-        var tradeItemName1 = '';
-        return arguments[tradeItemName1];
-    } else if ('tradeItemVar1' === 3) {
-        var tradeItemName1 = '';
-        return arguments[tradeItemName1];
-    } else if ('tradeItemVar1' === 4) {
-        var tradeItemName1 = '';
-        return arguments[tradeItemName1];
-    } else if ('tradeItemVar1' === 5) {
-        var tradeItemName1 = '';
-        return arguments[tradeItemName1];
-    } else if ('tradeItemVar1' === 6) {
-        var tradeItemName1 = '';
-        return arguments[tradeItemName1];
-    } else if ('tradeItemVar1' === 7) {
-        var tradeItemName1 = '';
-        return arguments[tradeItemName1];
-    } else if ('tradeItemVar1' === 8) {
-        var tradeItemName1 = '';
-        return arguments[tradeItemName1];
-    } else if ('tradeItemVar1' === 9) {
-        var tradeItemName1 = '';
-        return arguments[tradeItemName1];
-    } else if ('tradeItemVar1' === 10) {
-        var tradeItemName1 = '';
-        return arguments[tradeItemName1];
-    } else if ('tradeItemVar1' === 11) {
-        var tradeItemName1 = '';
-        return arguments[tradeItemName1];
-    } else if ('tradeItemVar1' === 12) {
-        var tradeItemName1 = '';
-        return arguments[tradeItemName1];
-    } else if ('tradeItemVar1' === 13) {
-        var tradeItemName1 = '';
-        return arguments[tradeItemName1];
-    } else if ('tradeItemVar1' === 14) {
-        var tradeItemName1 = '';
-        return arguments[tradeItemName1];
-    } else if ('tradeItemVar1' === 15) {
-        var tradeItemName1 = '';
-        return arguments[tradeItemName1];
+    /* Turn 'tradeItemVar's to 'tradeItemName' */
+}
+
+function usernameCheck() {
+    if ('username' === 'god' || 'username' === 'God' || 'username' === 'GOD' || 'username' === 'admin' || 'username' === 'Admin' || 'username' === 'ADMIN') {
+        /* Tell the user: "That would be too easy..." */
+        console.log('server: attempted admin login failed')
+    } else if ('username' === 'Admin1' || 'username' === 'ShragSir') {
+        /* Tell me (hopefully me): "Welcome back, Kaden. Remember not to spend too much time on making the game!" */
+        console.log('server: attempted admin login successful')
+    } else {
+        continueToGame()
     }
 }
+
+function healthMngr() {
+    if ('playerHealth' > 50 & 'playerHealth' < 60) {
+        /* HP bar set to 100% */
+    } else if ('playerHealth' > 40 & 'playerHealth' < 50) {
+        /* HP bar set to 80% */
+    } else if ('playerHealth' > 30 & 'playerHealth' < 40) {
+        /* HP bar set to 65% */
+    } else if ('playerHealth' > 20 & 'playerHealth' < 30) {
+        /* HP bar set to 45% */
+    } else if ('playerHealth' > 10 & 'playerHealth' < 20) {
+        /* HP bar set to 20% */
+    } else if ('playerHealth' > 1 & 'playerHealth' < 10) {
+        /* HP bar set to 5% */
+    }
+}
+
+function sHurt() {
+    playerHealth -= 5;
+}
+
+function mHurt() {
+    playerHealth -= 10;
+}
+
+function lHurt() {
+    playerHealth -= 15;
+}
+
+function xlHurt() {
+    playerHealth -= 25;
+}
+
+function xxlHurt() {
+    playerHealth -= 40;
+}
+
+function KO() {
+    playerHealth -= 55;
+}
+
+function TKO() {
+    playerHealth -= 60;
+}
+
+/* Actual game code */
+
 
 
