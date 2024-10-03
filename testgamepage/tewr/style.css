@@ -56,10 +56,11 @@ h1 {
 }
 
 .signInPopUp {
-  padding: 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: rgba(180,150,150,0.8);
   margin-left: 50px;
-  margin-top: 50px;
+  margin-bottom: 250px;
   transition: 1s;
 }
 
@@ -69,5 +70,7 @@ p {
   font-family: sans-serif, arial;
   text-color: rgb(220,210,210);
 }
+
+
 
 
