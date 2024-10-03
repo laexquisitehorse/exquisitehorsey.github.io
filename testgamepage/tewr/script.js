@@ -172,6 +172,7 @@ function signInPopUp() {
 }
 
 function dontShowPopUp1() {
+    signInPopUp()
     var hidePopUp1 = 1;
 }
 
