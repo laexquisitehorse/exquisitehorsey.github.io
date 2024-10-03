@@ -174,7 +174,6 @@ function dontShowPopUp1() {
     signInPopUp();
 }
 
-/* Actual game code */
 signInPopUp();
 
 
