@@ -54,3 +54,13 @@ h1 {
   transition: transform 1s;
   cursor: pointer;
 }
+
+.signInPopUp {
+  padding: 200px;
+  background-color: rgba(180,150,150,0.8);
+  margin-left: 50px;
+  margin-top: 50px;
+  transition: 1s;
+}
+
+
