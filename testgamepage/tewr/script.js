@@ -160,6 +160,15 @@ function TKO() {
     playerHealth -= 60;
 }
 
+function signInPopUp() {
+    var popUp1 = document.getElementById("")
+    if (popUp1.style.display === "none") {
+        popUp1.style.display = "block";
+    } else {
+        popUp1.style.display = "none";
+    }
+}
+
 /* Actual game code */
 
 
