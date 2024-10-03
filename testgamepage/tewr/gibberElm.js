@@ -1,3 +1,5 @@
+/* Movement functions: */
+
 document.addEventListener('keydown', function(event) {
   if (event.key === 'w' || event.key === 'W') {
     alert('key pressed: W');
@@ -8,7 +10,7 @@ document.addEventListener('keydown', function(event) {
   } else if (event.key === 'd' || event.key === 'D') {
     alert('key pressed: D');
   }
-};
+});
 
 document.addEventListener('keyup', function(event) {
   if (event.key === 'w' || event.key === 'W') {
@@ -20,4 +22,5 @@ document.addEventListener('keyup', function(event) {
   } else if (event.key === 'd' || event.key === 'D') {
     alert('key unpressed: D');
   }
-}
+});
+
