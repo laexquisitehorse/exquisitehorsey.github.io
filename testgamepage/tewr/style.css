@@ -63,4 +63,11 @@ h1 {
   transition: 1s;
 }
 
+p {
+  font-size: 25px;
+  text-align: center;
+  font-family: sans-serif, arial;
+  text-color: rgb(220,210,210);
+}
+
 
