@@ -1,3 +1,10 @@
+const spriteWidth1 = 15;
+const spreteHeight1 = 15;
+const borderWidth = 0;
+const borderHeight = 0;
+
+
+
 /* Movement functions: */
 
 document.addEventListener('keydown', function(event) {
