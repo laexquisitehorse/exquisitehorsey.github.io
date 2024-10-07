@@ -144,8 +144,7 @@ footer {
 }
 
 .item img {
-  max-width: 135px;
-  min-width: 135px;
+  width: 135px;
   border-radius: 6px;
 }
 
@@ -162,3 +161,10 @@ footer {
   display: flex;
   right: 1200px;
 }
+
+.logo {
+  width: 165px;
+  margin-left: 425px;
+}
+
+
