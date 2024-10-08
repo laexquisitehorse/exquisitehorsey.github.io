@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprite Movement</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+  </head>
+  <body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <script>const canvas = document.getElementById('gameCanvas');
+const ctx = canvas.getContext('2d');
+
+const sprite = new Image();
+sprite.src = '../../imgs/sprites/banana-of-truth.png'; // Replace with your sprite path
+
+let spriteX = 100; // Initial x position
+let spriteY = 100; // Initial y position
+const speed = 5; // Movement speed
+
+sprite.onload = () => {
+    // Start the game loop
+    requestAnimationFrame(gameLoop);
+};
+
+function gameLoop() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
+    ctx.drawImage(sprite, spriteX, spriteY); // Draw the sprite
+    requestAnimationFrame(gameLoop); // Repeat the game loop
+}
+
+// Handle keyboard input for movement
+document.addEventListener('keydown', (event) => {
+    switch (event.key) {
+        case 'ArrowUp':
+            spriteY -= speed;
+            break;
+        case 'ArrowDown':
+            spriteY += speed;
+            break;
+        case 'ArrowLeft':
+            spriteX -= speed;
+            break;
+        case 'ArrowRight':
+            spriteX += speed;
+            break;
+    }
+});
+</script>
+  </body>
+</html>
