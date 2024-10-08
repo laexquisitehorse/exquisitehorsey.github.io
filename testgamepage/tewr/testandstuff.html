@@ -13,7 +13,8 @@
   </head>
   <body>
     <canvas id="gameCanvas" width="1380" height="780"></canvas>
-    <script>const canvas = document.getElementById('gameCanvas');
+    <script>
+const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 
 const sprite = new Image();
@@ -21,7 +22,7 @@ sprite.src = '../../imgs/sprites/banana-of-truth.png'; // Replace with your spri
 
 let spriteX = 100; // Initial x position
 let spriteY = 100; // Initial y position
-const speed = 5; // Movement speed
+const speed = 15; // Movement speed
 
 sprite.onload = () => {
     // Start the game loop
@@ -51,6 +52,6 @@ document.addEventListener('keydown', (event) => {
             break;
     }
 });
-</script>
+    </script>
   </body>
 </html>
