@@ -7,7 +7,7 @@ Another unblocked games website. Though this one looks like it was copied straig
 * Redirects to Google drive after 200 seconds 🕙
 * (soon to be public) Search tab 🔎
 * Fulscreen for games by pressing the fullscreen button or by pressing 'f' ⇱
-* Favicon and title desgised as a animal facts website 🤫
+* Favicon and title desgised as an animal facts website 🤫
 * Includes banger games like **Super Mario 64**, **Super Hot**, **Drift Hunters**, **Half Life**, and **Eaglercraft** 🤘
 * Ad free games for ever (I know, i'm so nice.) 🚫
 * Quick Switch for redirecting to Google Drive manually by pressing 'q' on the home page ⚡
