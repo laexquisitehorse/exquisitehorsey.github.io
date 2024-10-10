@@ -20,6 +20,5 @@ I would be very greatful if someone took the time to help me with this project. 
 
 ## How to contact me:
 Email: shrashep@outlook.com
-Skype: https://join.skype.com/invite/fxFjcL7cu6Dl
 
 ## current version: 1.3.4
