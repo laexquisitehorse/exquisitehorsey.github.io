@@ -23,6 +23,6 @@ Email: shrashep@outlook.com
 
 ## current version: 1.3.4
 **Added:**
-This version has less bugs, all game pages are desgised as horse facts at Britannica, and better games are at the top.
+This version has less bugs, all game pages are desgised as horse facts at Britannica, and better games are at the top.   
 **Current Issues:**
 Doom is still broken, Half Life: Uplink is the only version that works, mediocre design, and too many things that I've coded, but can't be found on the website without digging for it.
