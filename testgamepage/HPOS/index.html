@@ -5,21 +5,9 @@
     <meta charset="UTF-8">
     <title>HorsePlayOS</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-function checkUserSignIn() {
-  let isSignedIn = sessionStorage.getItem('userStatus') === 'signed-in';
-  if (!isSignedIn) {  
-    //window.location.href = 'sign-in.html';
-    alert('sign in you bozo!');
-  } else {
-    let userStatus = 'signed-in';
-    console.log('User is already signed in:', userStatus);
-  }
-}
-window.onload = checkUserSignIn;
-    </script>
+    <script src="script.js"></script>
   </head>
   <body>
-    <p>Signed in as a </p>
+    <p>Signed in as a <!--put something here-->.</p>
   </body>
 </html>
